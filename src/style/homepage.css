@@ -485,6 +485,7 @@
 
   .creative-foundation .man-image {
     margin: 0 auto;
+    max-width: 180px;
   }
 
   .creative-foundation .design-sticky-wrap {
