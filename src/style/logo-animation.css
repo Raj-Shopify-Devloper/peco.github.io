@@ -6,7 +6,7 @@
 img.logo-image.hero-logo-fixed {
     position: fixed;
     scale: 5;
-    transform: translate(35%, 10vh) !important;
+    transform: translate(35%, 9.5vh) !important;
 }
 
 @media screen and (max-width: 768px) {
