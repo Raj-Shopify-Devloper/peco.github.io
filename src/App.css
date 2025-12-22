@@ -1,0 +1,734 @@
+/* =========================================================
+= = = = = = = = =   1. COMMON / GLOBAL CSS   = = = = = = = =
+========================================================= */
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus-visible {
+    box-shadow: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--second_font);
+    background-color: var(--primary_color);
+}
+
+.header-background {
+    padding-top: calc(var(--header-height) + 20px);
+    background: #1c1917;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'AspireNarrowSCBlack';
+    src: url('./store-font/AspireNarrowSCBlack-Regular.eot');
+    src: url('./store-font/AspireNarrowSCBlack-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./store-font/AspireNarrowSCBlack-Regular.woff2') format('woff2'),
+        url('./store-font/AspireNarrowSCBlack-Regular.woff') format('woff'),
+        url('./store-font/AspireNarrowSCBlack-Regular.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('./store-font/HindVadodara-Light.eot');
+    src: url('./store-font/HindVadodara-Light.eot?#iefix') format('embedded-opentype'),
+        url('./store-font/HindVadodara-Light.woff2') format('woff2'),
+        url('./store-font/HindVadodara-Light.woff') format('woff'),
+        url('./store-font/HindVadodara-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('./store-font/HindVadodara-Medium.eot');
+    src: url('./store-font/HindVadodara-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./store-font/HindVadodara-Medium.woff2') format('woff2'),
+        url('./store-font/HindVadodara-Medium.woff') format('woff'),
+        url('./store-font/HindVadodara-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('./store-font/HindVadodara-Regular.eot');
+    src: url('./store-font/HindVadodara-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./store-font/HindVadodara-Regular.woff2') format('woff2'),
+        url('./store-font/HindVadodara-Regular.woff') format('woff'),
+        url('./store-font/HindVadodara-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('./store-font/HindVadodara-Bold.eot');
+    src: url('./store-font/HindVadodara-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./store-font/HindVadodara-Bold.woff2') format('woff2'),
+        url('./store-font/HindVadodara-Bold.woff') format('woff'),
+        url('./store-font/HindVadodara-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Vadodara';
+    src: url('./store-font/HindVadodara-SemiBold.eot');
+    src: url('./store-font/HindVadodara-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./store-font/HindVadodara-SemiBold.woff2') format('woff2'),
+        url('./store-font/HindVadodara-SemiBold.woff') format('woff'),
+        url('./store-font/HindVadodara-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --first_font: 'AspireNarrowSCBlack';
+    --second_font: 'Hind Vadodara';
+    --white_color: #fff;
+    --black_color: #000;
+    --primary_color: #0184a0;
+}
+
+.first-font {
+    font-family: var(--first_font);
+}
+
+.second-font {
+    font-family: var(--second_font);
+}
+
+body .white-color {
+    color: var(--white_color);
+}
+
+body .letter-0 {
+    letter-spacing: 0;
+}
+
+body .gray-color {
+    color: var(--gray_color);
+}
+
+body .black-color {
+    color: var(--black_color);
+}
+
+body .primary-color {
+    color: var(--primary_color);
+}
+
+body .bg-white-color {
+    background-color: var(--white_color);
+}
+
+body .text-uppercase {
+    text-transform: uppercase;
+}
+
+body .m-0 {
+    margin: 0;
+}
+
+body .l-h-1 {
+    line-height: 1;
+}
+
+body .l-h-1-1 {
+    line-height: 1.1;
+}
+
+body .l-h-1-2 {
+    line-height: 1.2;
+}
+
+body .l-h-1-3 {
+    line-height: 1.3;
+}
+
+body .l-h-1-4 {
+    line-height: 1.4;
+}
+
+body .l-h-1-5 {
+    line-height: 1.5;
+}
+
+body .l-h-1-6 {
+    line-height: 1.6;
+}
+
+body .l-h-1-7 {
+    line-height: 1.7;
+}
+
+body .w-400 {
+    font-weight: 400;
+}
+
+body .w-500 {
+    font-weight: 500;
+}
+
+body .w-600 {
+    font-weight: 600;
+}
+
+body .w-700 {
+    font-weight: 700;
+}
+
+body .w-800 {
+    font-weight: 800;
+}
+
+@media screen and (min-width: 1024px) {
+    body .f-170 {
+        font-size: 170px;
+    }
+
+    body .f-110 {
+        font-size: 110px;
+    }
+
+    body .f-70 {
+        font-size: 70px;
+    }
+
+    body .f-72 {
+        font-size: 72px;
+    }
+
+    body .f-48 {
+        font-size: 48px;
+    }
+
+    body .f-40 {
+        font-size: 40px;
+    }
+
+    body .f-38 {
+        font-size: 38px;
+    }
+
+    body .f-36 {
+        font-size: 36px;
+    }
+
+    body .f-34 {
+        font-size: 34px;
+    }
+
+    body .f-33 {
+        font-size: 33px;
+    }
+
+    body .f-32 {
+        font-size: 32px;
+    }
+
+    body .f-31 {
+        font-size: 31px;
+    }
+
+    body .f-30 {
+        font-size: 30px;
+    }
+
+    body .f-28 {
+        font-size: 28px;
+    }
+
+    body .f-26 {
+        font-size: 26px;
+    }
+
+    body .f-24 {
+        font-size: 24px;
+    }
+
+    body .f-22 {
+        font-size: 22px;
+    }
+
+    body .f-21 {
+        font-size: 21px;
+    }
+
+    body .f-20 {
+        font-size: 20px;
+    }
+
+    body .f-18 {
+        font-size: 18px;
+    }
+
+    body .f-17 {
+        font-size: 17px;
+    }
+
+    body .f-16 {
+        font-size: 16px;
+    }
+
+    body .f-15 {
+        font-size: 15px;
+    }
+
+    body .f-14 {
+        font-size: 14px;
+    }
+
+    body .f-13 {
+        font-size: 13px;
+    }
+
+    body .f-12 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    body .f-170 {
+        font-size: 100px;
+    }
+
+    body .f-110 {
+        font-size: 72px;
+    }
+
+    body .f-70 {
+        font-size: 54px;
+    }
+
+    body .f-72 {
+        font-size: 48px;
+    }
+
+    body .f-48 {
+        font-size: 36px;
+    }
+
+    body .f-40 {
+        font-size: 36px;
+    }
+
+    body .f-38 {
+        font-size: 32px;
+    }
+
+    body .f-36 {
+        font-size: 31px;
+    }
+
+    body .f-34 {
+        font-size: 30px;
+    }
+
+    body .f-33 {
+        font-size: 28px;
+    }
+
+    body .f-32 {
+        font-size: 26px;
+    }
+
+    body .f-31 {
+        font-size: 22px;
+    }
+
+    body .f-30 {
+        font-size: 24px;
+    }
+
+    body .f-28 {
+        font-size: 22px;
+    }
+
+    body .f-26 {
+        font-size: 24px;
+    }
+
+    body .f-24 {
+        font-size: 20px;
+    }
+
+    body .f-22 {
+        font-size: 22px;
+    }
+
+    body .f-21 {
+        font-size: 21px;
+    }
+
+    body .f-20 {
+        font-size: 18px;
+    }
+
+    body .f-18 {
+        font-size: 17px;
+    }
+
+    body .f-17 {
+        font-size: 16px;
+    }
+
+    body .f-16 {
+        font-size: 15px;
+    }
+
+    body .f-15 {
+        font-size: 14px;
+    }
+
+    body .f-14 {
+        font-size: 14px;
+    }
+
+    body .f-13 {
+        font-size: 13px;
+    }
+
+    body .f-12 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    body .f-m-48 {
+        font-size: 48px;
+    }
+
+    body .f-m-40 {
+        font-size: 40px;
+    }
+
+    body .f-m-38 {
+        font-size: 38px;
+    }
+
+    body .f-m-36 {
+        font-size: 36px;
+    }
+
+    body .f-m-32 {
+        font-size: 32px;
+    }
+
+    body .f-m-31 {
+        font-size: 31px;
+    }
+
+    body .f-m-30 {
+        font-size: 30px;
+    }
+
+    body .f-m-28 {
+        font-size: 28px;
+    }
+
+    body .f-m-26 {
+        font-size: 26px;
+    }
+
+    body .f-m-24 {
+        font-size: 24px;
+    }
+
+    body .f-m-22 {
+        font-size: 22px;
+    }
+
+    body .f-m-20 {
+        font-size: 20px;
+    }
+
+    body .f-m-18 {
+        font-size: 18px;
+    }
+
+    body .f-m-17 {
+        font-size: 17px;
+    }
+
+    body .f-m-16 {
+        font-size: 16px;
+    }
+
+    body .f-m-15 {
+        font-size: 15px;
+    }
+
+    body .f-m-14 {
+        font-size: 14px;
+    }
+
+    body .f-m-13 {
+        font-size: 13px;
+    }
+
+    body .f-m-12 {
+        font-size: 12px;
+    }
+}
+
+.container {
+    max-width: 1345px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.design-sticky-wrap {
+    position: sticky;
+    top: 25%;
+    /* top: 50%; */
+    /* transform: translate(0% ,-50%); */
+}
+
+.design-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 0 0 20px;
+}
+
+.section-sub-title {
+    text-align: center;
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.left-content {
+    position: relative;
+}
+
+.primary {
+    border: 5px solid var(--white_color);
+    background-color: var(--primary_color);
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    color: var(--white_color);
+}
+
+.primary.white-text-primary-button {
+    background-color: transparent;
+    min-height: auto;
+    padding: 6px 10px;
+    color: var(--white);
+    border: 2px solid var(--primary_color);
+}
+
+.primary-button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.primary-btn-wrap {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+}
+
+.primary-button-text {
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+}
+
+.primary-icon-wrap {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    background-color: rgb(41, 41, 41);
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.primary:hover .primary-icon-wrap {
+    transform: translateX(5px);
+}
+
+.primary-button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.inner-box-div {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.design-process-image {
+    width: auto;
+    opacity: 0;
+    will-change: opacity, transform;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    position: absolute;
+}
+
+@keyframes dscroll {
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.line-shape {
+    max-width: 1531px;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    top: -20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.line-shape span {
+    position: relative;
+    width: 1px;
+    height: 100%;
+    display: block;
+    background: #ffffff3d;
+    margin: 0px;
+    transition: all 0.4s ease-in-out;
+}
+
+.line-shape span::after {
+    animation: dscroll 2s linear infinite;
+    width: 2px;
+    height: 24px;
+    bottom: 0;
+    left: 0;
+    background: var(--black_color);
+    box-shadow: rgba(228, 235, 242, 0) 0px 8px 24px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    clip-path: polygon(51% 8%, 68% 15%, 66% 40%, 60% 78%, 56% 100%, 46% 100%, 42% 84%, 38% 56%, 34% 17%);
+}
+
+.line-shape span::before,
+.line-shape span::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: var(--black_color);
+    box-shadow: rgba(228, 235, 242, 0) 0px 8px 24px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    clip-path: polygon(51% 8%, 68% 15%, 66% 40%, 60% 78%, 56% 100%, 46% 100%, 42% 84%, 38% 56%, 34% 17%);
+}
+
+.line-shape span:nth-child(2)::after {
+    animation: dscroll 2.1s linear infinite;
+}
+
+.line-shape span:nth-child(3)::before {
+    animation: dscroll 4.2s linear infinite;
+}
+
+.line-shape span:nth-child(3)::after {
+    animation: dscroll 2.2s linear infinite;
+}
+
+.line-shape span:nth-child(4)::before {
+    animation: dscroll 4.3s linear infinite;
+}
+
+.line-shape span:nth-child(4)::after {
+    animation: dscroll 2.3s linear infinite;
+}
+
+.line-shape span:nth-child(5)::before {
+    animation: dscroll 4.4s linear infinite;
+}
+
+.line-shape span:nth-child(5)::after {
+    animation: dscroll 2.4s linear infinite;
+}
+
+.line-shape span:nth-child(6)::before {
+    animation: dscroll 4s linear infinite;
+}
+
+.line-shape span:nth-child(6)::after {
+    animation: dscroll 1s linear infinite;
+}
+
+@media screen and (max-width: 991px) {
+    .primary {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .design-sticky-wrap {
+        position: relative;
+        top: 0;
+    }
+}
