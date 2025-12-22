@@ -1,7 +1,5 @@
 {
-    "name": "animation-site",
+    "name": "peco",
     "compatibility_date": "2024-12-19",
-    "assets": {
-        "directory": "./dist"
-    }
+    "pages_build_output_dir": "./dist"
 }
