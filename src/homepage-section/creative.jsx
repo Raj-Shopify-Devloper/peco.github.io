@@ -50,7 +50,7 @@ const CreativeSection = () => {
                           </defs>
                           <text fontSize="9.2" fontWeight="600" fill="#fff">
                             <textPath xlinkHref="#circle">
-                              STRANTH YOU CAN TRUST • STRANTH YOU CAN TRUST •
+                              STRENGTH YOU CAN TRUST • STRENGTH YOU CAN TRUST •
                             </textPath>
                           </text>
                         </svg>

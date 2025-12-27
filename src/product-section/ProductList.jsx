@@ -38,14 +38,14 @@ const ProductList = () => {
 
     const grouts = [
         { id: 1, name: 'Polymer Tile Grout', type: 'Anti-Fungal Grout', image: polumerTileGrout, url: '/product/polymer-tile-grout' },
-        { id: 2, name: 'Epoxy Grout (Bucket)', type: '3-Part Epoxy Grout', image: epoxyGroutBucket, url: '/product/epoxy-grout-bucket' },
-        { id: 3, name: 'Grout Admixture', type: 'Milky White Tile Grout Admixture', image: epoxyAdmixure, url: '/product/grout-admix' }
+        { id: 2, name: 'Epoxy Grout (Bucket)', type: '3-Part Epoxy Grout', image: epoxyGroutBucket, url: '/product/epoxy-grout-bucket' }
     ];
 
     const waterproofing = [
         { id: 1, name: 'PecoShield 2K', type: 'Two Component Waterproofing', image: productImage, url: '/product/pecoshield-2k' },
         { id: 2, name: 'LW+', type: 'Integral Waterproofing Liquid Admixture', image: lwImage, url: '/product/lw+' },
-        { id: 3, name: 'SBR', type: 'Late Bond', image: lwImage, url: '/product/sbr-latex-bond' },
+        { id: 3, name: 'SBR', type: 'Late Bond', image: sbrImage, url: '/product/sbr-latex-bond' },
+        { id: 4, name: 'Grout Admixture', type: 'Milky White Tile Grout Admixture', image: epoxyAdmixure, url: '/product/grout-admix' }
     ];
 
     const mortar = [
