@@ -21,7 +21,6 @@ import potLifeIcon30 from '../assets/time-30-min.webp';
 import thinkness from '../assets/thinkness.webp';
 import epoxyAdmixure from '../assets/grout-admixure.webp';
 import strength from '../assets/strength.webp';
-import smoothfinish from '../assets/smooth-finish.webp';
 import availablemorecolors from '../assets/available-more-colors.webp';
 import easyusecleaning from '../assets/easy-use-cleaning.webp';
 import weatherfinish from '../assets/weather-finish.webp';
@@ -32,8 +31,12 @@ import waterstain from '../assets/water-stain.webp';
 import clockicon from '../assets/clock-icon.webp';
 import lwImage from '../assets/lw+.webp';
 import SbrImage from '../assets/SBR.webp';
+import PECOblockfix from '../assets/PECO-block-fix.webp';
+import mix from '../assets/mix.webp';
+import highstrength from '../assets/high-strength.webp';
+import playwood from '../assets/playwood.webp';
 
-const products = {
+export const products = {
     pecogrip: {
         name: 'Peco Grip',
         title: 'TILE ADHESIVE',
@@ -155,30 +158,52 @@ const products = {
         name: 'PecoExtreme',
         title: 'TILE ADHESIVE',
         subtitle: 'PecoExtreme',
-        type: `Type V :- 'T' S2`,
+        type: `TYPE - 5T S2`,
         description:
-            'PecoExtreme is a two-component Epoxy PU tile adhesive designed for installing all types of tiles & stones (including glass & metal) on both interior and exterior floors and walls. It is highly versatile, suitable for deformable, absorbent, & non-absorbent substrates like metal, wood, rubber, PVC, & cement-based surfaces.',
+            'Peco Extreme Tile Adhesive is a two-component, ready-to-mix thin-set adhesive designed for fixing large format tiles and stones. It adheres to multiple substrates including metal and glass surfaces. High adhesion adhesive with no vertical slip on deformable substrates, ideal for green building applications.',
         image: pecoExtreme,
         features: [
-            { icon: 'indoor', label: 'INDOOR USAGE' },
-            { icon: 'water', label: 'WATER MIXING', sublabel: '4-5 Ltr PER BAG' },
-            { icon: 'color', label: 'COLOUR', sublabel: 'GREY', isColor: true },
-            { icon: 'clock', label: 'SET TIME' },
-            { icon: 'potLifeIcon90', label: 'POTLIFE' },
-            { icon: 'default', label: 'ADHESIVE', sublabel: 'TYPE 5T' },
+            { icon: 'default', label: 'ADHESIVE', sublabel: 'TYPE-5T S2' },
+            { icon: 'indoor', label: 'SUITABLE FOR ANY SURFACE' },
+            { icon: 'playwood', label: 'FOR METAL, PLYWOOD & MANY DRY WALL APPLICATIONS' },
+            { icon: 'mix', label: 'TWO COMPONENTS, JUST MIX AND USE' },
+            { icon: 'highstrength', label: 'HIGH STRENGTH, CHEMICAL RESISTANT' },
+            { icon: 'waterstain', label: 'WATER, FREEZING, THERMAL SHOCK RESISTANT' },
         ],
-        standard: 'CONFORMS TO IS 15477-2004 : TYPE-5 T',
+        standard: 'CONFORMS TO IS 15477-2004',
         technicalData: [
-            { label: 'Coverage', value: 'Approx 45-55 sq. ft per 20kg bag' },
-            { label: 'Tensile Adhesion<br />Annex A (Clause 5.1)', value: 'Dry Condition: 3.40-3.90 N/mm²' },
-            { label: 'Shear Adhesion<br />Annex B (Clause 5.2)', value: 'Dry Condition: 6.40-7.50 N/mm²<br />Heat Condition: 3.40-4.50 N/mm²' },
-            { label: 'Transverse Deformation', value: '8.0 - 10.0 mm' },
-            { label: 'Minimum Bed<br />Thickness required', value: '3 mm using 6MM X 6MM Notched trowel' },
+            { label: 'Coverage', value: 'Approx 2-4 KG/m²' },
+            {
+                label: 'Tensile Adhesion<br/>Annex A (Clause 5.1)',
+                value: 'Dry Condition: 2.0 - 2.5 N/mm²<br/>Wet Condition: 1.0 - 1.5 N/mm²'
+            },
+            {
+                label: 'Shear Adhesion<br/>Annex B (Clause 5.2)',
+                value: 'Dry Condition: 6.0 - 7.0 N/mm²<br/>Wet Condition: 5.5 - 6.0 N/mm²<br/>Heat Condition: 5.5 - 6.0 N/mm²'
+            },
+            {
+                label: 'Slip Resistance<br/>Annex E (Clause 5.5)',
+                value: '5.0 - 6.0 mm'
+            },
+            {
+                label: 'Transverse Deformation',
+                value: '0.3 - 0.5 mm'
+            },
+            {
+                label: 'Minimum Bed Thickness required',
+                value: '3 mm using 6 mm × 6 mm Notched trowel'
+            }
         ],
+
         coverageNote: '*Actual Coverage depends on substrate condition & method of application',
-        packSize: '4',
+
+        packSize: '4 kg',
+
         shelfLife: '12 months from the date of manufacturing.',
-        shelfLifeNote: 'Stored in a original sealed sacks in a dry and closed place.',
+
+        shelfLifeNote: 'Stored in original sealed bucket in a dry and closed place.',
+
+        compliance: "Complies to IS 15477:2019 'Type 5T' & EN 12004 'R2TE S2' Classification."
     },
     'polymer-tile-grout': {
         name: 'Polymer Tile Grout',
@@ -191,7 +216,7 @@ const products = {
         features: [
             { icon: 'indoor', label: 'INDOOR/ OUTDOOR USAGE' },
             { icon: 'default', label: 'CAN FILL THE JOINTS', sublabel: '1mm-3mm' },
-            { icon: 'smoothfinish', label: 'SMOOTH FINISH' },
+            { icon: 'stainproof', label: 'SMOOTH FINISH' },
             { icon: 'easyusecleaning', label: 'EASY TO APPLY & CLEAN' },
             { icon: 'availablemorecolors', label: 'AVAILABLE IN MORE THAN 15 COLORS' },
             { icon: 'weatherfinish', label: 'WEATHER FINISH' },
@@ -219,7 +244,7 @@ const products = {
         image: epoxyGroutBucket,
         features: [
             { icon: 'stainproof', label: 'STAIN PROOF & EASY TO CLEAN' },
-            { icon: 'chemicalresistance', label: 'NON-CRACKING & POWDERING' },
+            { icon: 'noncracking', label: 'NON-CRACKING & POWDERING' },
             { icon: 'clock', label: 'CURING TIME' },
             { icon: 'potLifeIcon30', label: 'POT LIFE' },
             { icon: 'chemicalresistance', label: 'CHEMICAL RESISTANCE' },
@@ -384,24 +409,32 @@ const products = {
         shelfLife: '12 months from the date of manufacturing.',
         shelfLifeNote: 'Stored in a original sealed sacks in a dry and closed place.',
     },
-    'block-jointing-mortar': {
+    'peco-block-fix': {
         name: 'Peco Block Fix',
         title: 'BLOCK JOINTING MORTAR',
         subtitle: 'Peco Block Fix',
         type: 'Polymer Modified Adhesive for Masonry',
-        description:
-            'Polymer modified adhesive for masonry building applications, optimum for the adhesion of AAC blocks heaving high shear bond strength. Peco Block Fix replaces traditional method of 20-25mm thickness with 3 - 6mm thickness of Reliant Block Fix. High shear bond strength: Ensuring secure and reliable adhesion of AAC blocks, providing structural stability to your building. Improved efficiency: With its reduced thickness requirement, it streamlines the construction process, making it more efficient and cost-effective.',
-        image: productImage,
+        description: '',
+        applications: [
+            'Polymer modified adhesive for masonry building applications, optimum for the adhesion of AAC blocks heaving high shear bond strength.',
+            'PECO BLOCK FIX replaces traditional method of 20-25mm thickness with 3-6 mm thickness of RELIANT BLOCK FIX.',
+            'High shear bond strength: Ensuring secure and reliable adhesion of AAC blocks, providing structural stability to your building.',
+            'Improved efficiency: With its reduced thickness requirement, it streamlines the construction process, making it more efficient and cost-effective'
+        ],
+        image: PECOblockfix,
         features: [
         ],
         standard: 'Conforms to ASTM C: 1660-10',
         technicalData: [
-            { label: 'Coverage', value: 'Approx 70-80 sq.ft./40kg at 2-3mm bed thickness' },
+            {
+                label: 'Coverage',
+                value: 'Approx 70–80 sq.ft per 40 kg bag at 2–3 mm bed thickness'
+            }
         ],
-        coverageNote: '',
+        coverageNote: 'Approx 70-80 sq.ft./40kg at 2-3mm bed thickness ',
         packSize: '40',
-        shelfLife: '12 months.',
-        shelfLifeNote: 'Stored in a original sealed sacks in a dry and closed place.',
+        shelfLife: '12 months',
+        shelfLifeNote: 'Stored in original sealed sacks in a dry and closed place.'
     },
     'smooth-putty': {
         name: 'Smooth Putty',
@@ -442,10 +475,6 @@ const Thinkness = () => (
 
 const Accblocks = () => (
     <img src={accblocks} alt="Accblocks" />
-);
-
-const Smoothfinish = () => (
-    <img src={smoothfinish} alt="smoothfinish" />
 );
 
 const AvailableMoreColors = () => (
@@ -496,6 +525,18 @@ const WaterIcon = () => (
     <img src={Water} alt="water" />
 );
 
+const HighStrength = () => (
+    <img src={highstrength} alt="highstrength" />
+);
+
+const Playwood = () => (
+    <img src={playwood} alt="playwood" />
+);
+
+const Mix = () => (
+    <img src={mix} alt="mix" />
+);
+
 const SaveCementIcon = () => (
     <img src={SaveCement} alt="saveCement" />
 );
@@ -518,6 +559,12 @@ const ProductDetail = () => {
         switch (feature.icon) {
             case 'indoor':
                 return <IndoorIcon />;
+            case 'playwood':
+                return <Playwood />;
+            case 'highstrength':
+                return <HighStrength />;
+            case 'mix':
+                return <Mix />;
             case 'SaveCement':
                 return <SaveCementIcon />;
             case 'Water':
@@ -546,8 +593,6 @@ const ProductDetail = () => {
                 return <WeatherFinish />;
             case 'easyusecleaning':
                 return <EasyUseCleaning />;
-            case 'smoothfinish':
-                return <Smoothfinish />;
             case 'availablemorecolors':
                 return <AvailableMoreColors />;
             case 'strength':
@@ -562,7 +607,7 @@ const ProductDetail = () => {
 
     return (
         <>
-            <div className="product-detail-page">
+            <div className={`product-detail-page ${product.title.replace(/\s/g, '-').toLowerCase()}`}>
                 <h1 className="product-detail-title f-170 f-m-48 w-800 first-font l-h-1">{product.title}</h1>
                 <div className="product-detail-container container">
                     <div className="product-detail-image-section">

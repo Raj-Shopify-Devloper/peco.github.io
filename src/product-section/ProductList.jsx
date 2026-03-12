@@ -14,6 +14,7 @@ import smoothPutty from '../assets/smooth-putty.webp';
 import pecoExtreme from '../assets/peco-extreme.webp';
 import lwImage from '../assets/lw+.webp';
 import sbrImage from '../assets/SBR.webp';
+import PECOblockfix from '../assets/PECO-block-fix.webp';
 
 const ProductList = () => {
     const [activeTab, setActiveTab] = useState('TILE ADHESIVE');
@@ -49,7 +50,7 @@ const ProductList = () => {
     ];
 
     const mortar = [
-        { id: 1, name: 'Block Jointing Mortar', type: 'Thin Bed Mortar', image: productImage, url: '/product/block-jointing-mortar' }
+        { id: 1, name: 'Peco Block Fix', type: 'Thin Bed Mortar', image: PECOblockfix, url: '/product/peco-block-fix' }
     ];
 
     const putty = [

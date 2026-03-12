@@ -214,9 +214,8 @@
 .logo-slider-section .logo-slider {
   display: flex;
   animation: scroll 20s linear infinite;
-  gap: 4rem;
   padding: 0rem 0;
-  width: fit-content;
+  width: max-content;
 }
 
 .logo-slider-section .logo-item {
@@ -225,6 +224,7 @@
   justify-content: center;
   min-width: 200px;
   flex-shrink: 0;
+  margin-right: 4rem;
 }
 
 .logo-slider-section .logo-img {
@@ -255,12 +255,12 @@
   }
 
   .logo-slider-section .logo-slider {
-    gap: 2rem;
     animation-duration: 15s;
   }
 
   .logo-slider-section .logo-item {
     min-width: 150px;
+    margin-right: 2rem;
   }
 
   .logo-slider-section .logo-img {
@@ -274,12 +274,12 @@
   }
 
   .logo-slider-section .logo-slider {
-    gap: 1rem;
     animation-duration: 12s;
   }
 
   .logo-slider-section .logo-item {
     min-width: 120px;
+    margin-right: 1rem;
   }
 
   .logo-slider-section .logo-img {

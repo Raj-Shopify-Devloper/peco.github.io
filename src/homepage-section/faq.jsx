@@ -4,6 +4,8 @@ import productImage from "../assets/our-product.webp";
 import pecogripImage from '../assets/pecogrip.webp';
 import epoxyGroutBucket from '../assets/epoxy-grout-bucket.webp';
 import smoothPutty from '../assets/smooth-putty.webp';
+import PECOblockfix from '../assets/PECO-block-fix.webp';
+import sbrImage from '../assets/SBR.webp';
 
 
 export default function OfferSection() {
@@ -28,8 +30,9 @@ export default function OfferSection() {
     },
     {
       title: "WATER PROOFING",
+      img: sbrImage,
       desc: "Guard your spaces from leaks and dampness. Engineered to protect, built to perform.",
-      link: "/product/epoxy-grout-bucket",
+      link: "/product/sbr-latex-bond",
     },
     {
       title: "WALL PUTTY",
@@ -39,8 +42,9 @@ export default function OfferSection() {
     },
     {
       title: "BLOCK JOINTING MORTAR",
+      img: PECOblockfix,
       desc: "Stronger walls start with stronger bonds, ensures precision, durability, and perfect alignment.",
-      link: "/product/smooth-putty",
+      link: "/product/peco-block-fix",
     }
   ];
 
