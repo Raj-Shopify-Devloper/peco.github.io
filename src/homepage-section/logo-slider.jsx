@@ -1,25 +1,25 @@
 import React from 'react';
-import logo1 from '../assets/eiffage.webp';
-import logo2 from '../assets/aecom.webp';
-import logo3 from '../assets/amazon.webp';
-import logo4 from '../assets/build.webp';
-import logo5 from '../assets/fedex.webp';
-import logo6 from '../assets/DREAMSCAPE.webp';
-import logo7 from '../assets/LAXMI.webp';
-import logo8 from '../assets/FORTUNE.webp';
-import logo9 from '../assets/SAROVAR.webp';
+// import logo1 from '../assets/eiffage.webp';
+// import logo2 from '../assets/aecom.webp';
+// import logo3 from '../assets/amazon.webp';
+// import logo4 from '../assets/build.webp';
+// import logo5 from '../assets/fedex.webp';
+import logo1 from '../assets/DREAMSCAPE.webp';
+import logo2 from '../assets/LAXMI.webp';
+import logo3 from '../assets/FORTUNE.webp';
+import logo4 from '../assets/SAROVAR.webp';
 
 const LogoSlider = () => {
   const logos = [
-    { id: 1, src: logo1, alt: 'EIFFAGE' },
-    { id: 2, src: logo2, alt: 'AECOM' },
-    { id: 3, src: logo3, alt: 'Amazon' },
-    { id: 4, src: logo4, alt: 'Build' },
-    { id: 5, src: logo5, alt: 'FedEx' },
-    { id: 6, src: logo6, alt: 'DREAMSCAPE' },
-    { id: 7, src: logo7, alt: 'LAXMI' },
-    { id: 8, src: logo8, alt: 'FORTUNE' },
-    { id: 9, src: logo9, alt: 'SAROVAR' },
+    // { id: 1, src: logo1, alt: 'EIFFAGE' },
+    // { id: 2, src: logo2, alt: 'AECOM' },
+    // { id: 3, src: logo3, alt: 'Amazon' },
+    // { id: 4, src: logo4, alt: 'Build' },
+    // { id: 5, src: logo5, alt: 'FedEx' },
+    { id: 1, src: logo1, alt: 'DREAMSCAPE' },
+    { id: 2, src: logo2, alt: 'LAXMI' },
+    { id: 3, src: logo3, alt: 'FORTUNE' },
+    { id: 4, src: logo4, alt: 'SAROVAR' },
   ];
 
   return (
